@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music-Player-Design</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+<div class="container">
+  <div class="music-player">
+<nav>
+  <div class="circle">
+    <i class='bx bx-chevron-left'></i>
+  </div>
+  <div class="circle">
+    <i class='bx bx-menu'></i>
+  </div>
+</nav>
+<img src="media/thumb.png" class="song-img">
+<h1>Peace</h1>
+<p>Betelhem Tezera</p>
+<audio  id="song">
+  <source src="media/Track 1.mp3" type="audio/mpeg">
+  <source src="media/Track 2.mp3" type="audio/mpeg">
+  <source src="media/Track 3.mp3" type="audio/mpeg">
+</audio>
+<input type="range" value="0" id="progress">
+
+<div class="controls">
+  
+   <div> <i class='bx bxs-skip-previous-circle'></i></div>
+
+   <div onclick="playPause()"> <i class='bx bx-play' id="ctrlIcon"></i></div>
+
+<div><i class='bx bxs-skip-next-circle' ></i> </div>
+
+</div>
+  </div>
+</div>
+
+<script src="script.js"> </script>
+
+
+</body>
+</html>
